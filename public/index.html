@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Store - Premium Basketball Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JORDAN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#shoes">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#cart" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Air Jordan Collection</h1>
+            <p>Elevate Your Game</p>
+            <a href="#shoes" class="cta-button">Shop Now</a>
+        </section>
+
+        <section id="featured" class="featured-section">
+            <h2>Featured Release</h2>
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1200" alt="Featured Jordan">
+                </div>
+                <div class="featured-info">
+                    <h3>Air Jordan 1 High OG 'Chicago'</h3>
+                    <p class="price">$180</p>
+                    <p class="description">The iconic silhouette that started it all. Back in its original form.</p>
+                    <a href="#shoes" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shoes" class="shoes-section">
+            <h2>Latest Releases</h2>
+            <div id="shoes-container" class="shoes-grid"></div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>The Legacy</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Since 1985, Air Jordan has revolutionized basketball footwear. What began as a signature line for Michael Jordan has evolved into a brand representing excellence, innovation, and style.</p>
+                    <p>Each pair tells a story, carrying the legacy of the greatest basketball player of all time.</p>
+                </div>
+                <div class="legacy-stats">
+                    <div class="stat">
+                        <span class="number">35+</span>
+                        <span class="label">Years of Innovation</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">37</span>
+                        <span class="label">Main Models</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">1000+</span>
+                        <span class="label">Colorways</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="shoe-modal" class="modal">
+            <div class="modal-content product-modal">
+                <span class="close">&times;</span>
+                <div id="shoe-details"></div>
+            </div>
+        </div>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Shopping Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0</span></h3>
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Jordan</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jordan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
